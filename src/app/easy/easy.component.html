@@ -1,0 +1,9 @@
+<div>
+	<input class="input" [(ngModel)]="pregunta" placeholder="Preguntame algo">
+	<button class="boton" (click)="recibir_respuesta()">Consulta</button>
+	<br><br><br>
+	<div class="resp">
+		<img *ngIf="image" src="{{gif.image}}">
+    <p>{{gif.answer}}</p>
+	</div>
+</div>
